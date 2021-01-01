@@ -1,4 +1,4 @@
-package test.day14_TypesOfFramework_Cucumber;
+package test.day14_TypesOfFramework_Cucumber_ExtentReports;
 
 public class day14_SeleniumNotes {
     /*

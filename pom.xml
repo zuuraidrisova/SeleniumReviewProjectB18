@@ -16,9 +16,9 @@
         <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
 
-    <!-- selenium dependency -->
     <dependencies>
 
+        <!-- selenium dependency -->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -58,6 +58,16 @@
             <artifactId>poi-ooxml</artifactId>
             <version>4.1.2</version>
         </dependency>
+
+        <!--html extent reports -->
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <!-- pom.xml -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>3.1.5</version>
+        </dependency>
+
 
     </dependencies>
 
