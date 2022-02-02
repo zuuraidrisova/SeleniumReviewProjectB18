@@ -50,6 +50,7 @@ public class TC18_SeleniumEasy_Checkbox_Section1 {
         //5. Verify “Success – Check box is checked” message is displayed.
         if(successMessage.isDisplayed()){
 
+
             System.out.println("“Success – Check box is checked” is displayed.Verification passed!");
         }else{
 

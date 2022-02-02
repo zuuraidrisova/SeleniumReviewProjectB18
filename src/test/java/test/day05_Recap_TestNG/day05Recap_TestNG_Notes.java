@@ -330,7 +330,6 @@ findElements()-->
 	-> It does NOT throw an exception.
 	-> It returns an empty list.
 
-
 - Checkboxes and radio buttons
 	- checkbox:
 		- allows for multiple selection
@@ -356,7 +355,6 @@ HOW DO WE HANDLE CHECKBOXES AND RADIO BUTTONS USING SELENIUM?
 	syntax: driver.findElement(LOCATOR).isSelected();
 	syntax: driver.findElement(LOCATOR).isEnabled();
 
-
 org.openqa.selenium.StaleElementReferenceException:
 	-> A stale element reference exception is thrown in one of two cases, the first being more common than the second:
 
@@ -379,7 +377,6 @@ org.openqa.selenium.StaleElementReferenceException:
 // after refresh, driver will not be able to do any action on checkbox webelement, UNTIL WE RELOCATE/REFRESH the reference.
 
 -If the web element is completely removed we just need to use try/catch and catch the exception and do our verification
-
 
 
         TESTNG --> NG STANDS FOR NEXT GENERATION
@@ -409,7 +406,6 @@ ANNOTATIONS:
 	 -> That method becomes a TestNG test
 	 -> Therefore we can run independent tests without needing main method.
 
-
 2- @BeforeMethod:
 	 -> This annotation makes the method run before each @Test in the class
 	 -> You declare and write it just once, but it will be ran however many times
@@ -418,7 +414,7 @@ ANNOTATIONS:
 	In which case this is useful?
 	 -> This is useful when you want to do any driver setups.
 	  ex:
-	  	-> creating and instantiang webDriver
+	  	-> creating and instantiating webDriver
 	  	-> opening browser
 
 3- @AfterMethod:

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import utilities.WebDriverFactory;
+
 /*
 7- cssSelector
 	-> it has its own syntax
@@ -38,6 +39,7 @@ ex:
 
  */
 public class CssSelectorExample {
+
 /*
     Search Amazon
 1.Open browser

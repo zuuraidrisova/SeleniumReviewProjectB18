@@ -1,14 +1,13 @@
 package test.day03_Xpath_CssSelector_Locators;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class TC10_BasicAuthenticationZeroBank {
      /*
     TC #10: Basic authentication Zero Bank
-1. Open Chrome browser
+1. Open Safari browser
 2. Go to http://zero.webappsecurity.com/login.html
 3. Enter username: username
 4. Enter password: password
@@ -21,10 +20,10 @@ Print out results in validation formats
      public static void main(String[] args) {
 
          //sets up the driver
-         WebDriverManager.chromedriver().setup();
+        // WebDriverManager.chromedriver().setup();
 
          //opens chrome browser
-         WebDriver driver = new ChromeDriver();
+         WebDriver driver = new SafariDriver();
 
          //makes fullscreen
          driver.manage().window().maximize();
@@ -50,6 +49,7 @@ Print out results in validation formats
          if(actualTitle.equals(expectedTitle)){
 
              System.out.println("Landing Page Title Verification Passed!");
+
          }else{
 
              System.out.println("Landing Page Title Verification Failed!");
@@ -64,6 +64,7 @@ Print out results in validation formats
          if(hrefAttributeValue.contains(hrefAttributeValueContains)){
 
              System.out.println("Href Attribute Value contains expected value.Passed!");
+
          }else{
 
              System.out.println("Href Attribute Value does not contain expected value.Failed!");
@@ -76,13 +77,13 @@ Print out results in validation formats
          if(displayed){
 
              System.out.println("Username is displayed.Passed!");
+
          }else{
 
              System.out.println("Username is not displayed.Failed");
          }
 
          driver.close();
-
 
 
      }

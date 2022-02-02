@@ -19,6 +19,7 @@ public class FirstSeleniumClass {
         //3- This methods gets the given URL in an open browser.
         driver.get("https://www.google.com");
 
+        driver.close();
 
     }
 }

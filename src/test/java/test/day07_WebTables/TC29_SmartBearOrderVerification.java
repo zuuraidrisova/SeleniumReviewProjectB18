@@ -13,6 +13,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC29_SmartBearOrderVerification {
+
     /*
     TC#29: Smartbear software order verification
 1. Open browser
@@ -21,6 +22,7 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
  and login to Smartbear software
 3. Verify Susan McLaren has order on date “01/05/2010”
      */
+
     static WebDriver driver;
 
     @BeforeMethod
@@ -38,7 +40,6 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
 
     }
 
-
     @Test
     public void smartBearOrder_verification(){
 
@@ -47,9 +48,11 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
         WebElement susanOrderDate = driver.findElement(By.xpath("//table[@class='SampleTable']/tbody/tr[6]/td[5]"));
 
         String expectedOrderDate = "01/05/2010";
+
         String actualOrderDate = susanOrderDate.getText();
 
         Assert.assertEquals(actualOrderDate, expectedOrderDate);
+
 
     }
 

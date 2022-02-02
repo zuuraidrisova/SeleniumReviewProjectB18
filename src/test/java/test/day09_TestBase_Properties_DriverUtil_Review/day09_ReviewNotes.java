@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class day09_ReviewNotes {
+
     /*
     JUL 1, WEDNESDAY
 
@@ -23,7 +24,7 @@ What is hard coding?
 How do we understand if we are hard coding test data?
 - If you have to go inside of the test to change the data,
    it means you hardcoded the data into your source.
-
+***********************************************************
 WHAT IS PROPERTIES TYPE OF FILE?
 --> PROPERTIES FILE is just another type of file.
 --> There are different types of TEXT storing files such as:
@@ -105,7 +106,7 @@ HOW DO WE READ FROM THE PROPERTIES?
  into this object, it has its ready methods to help us read key=value format.
 
 What is framework?
--> Is the combination of the tools, and utilities that we use in and project makes our framework.
+-> Is the combination of the tools, and utilities that we use in our project makes our framework.
 -> What kind of logic you created in your project.
 
 --> STEP BY STEP HOW TO READ FROM PROPERTIES

@@ -24,14 +24,15 @@ public class SmartBearUtilities {
 
         WebElement loginButton = driver.findElement(By.xpath("//input[@type='submit']"));
 
-
         //entering credentials and clicking the login button
         usernameInput.sendKeys("Tester");
+
         passwordInput.sendKeys("test");
+
         loginButton.click();
 
-    }
 
+    }
 
        /*
 PRACTICE #4: Method: verifyOrder
@@ -55,7 +56,7 @@ given name is in the list or not.
             if(eachName.getText().equals(expectedName)) {
                 //to check if each Name is equal to expected name
 
-                actualName += eachName.getText();//if equal, concate it to actual Name
+                actualName = eachName.getText();//if equal, assign it to actual Name
             }
 
         }
@@ -74,6 +75,7 @@ given name is in the list or not.
 • Name1: name , City1: city
 • Name2: name , City2: city
      */
+
     public static void printNamesAndCities(WebDriver driver){
 
         //locating names web elements and storing them in list
@@ -84,15 +86,10 @@ given name is in the list or not.
 
         for (int i = 0; i < listOfNames.size(); i++){
 
-
             System.out.println("Name "+ (i+1) +" "+ listOfNames.get(i).getText()+", City "+(i+1)+" "+listOfCities.get(i).getText());
 
         }
 
     }
-
-
-
-
 
 }

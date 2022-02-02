@@ -1,6 +1,7 @@
 package test.day01_Selenium_Intro;
 
 public class day01SeleniumNotes {
+
     /*
     JUN 2, TUESDAY
 

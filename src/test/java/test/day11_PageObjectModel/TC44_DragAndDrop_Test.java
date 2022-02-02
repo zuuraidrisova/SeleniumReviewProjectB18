@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import utilities.Driver;
 
 public class TC44_DragAndDrop_Test {
+
     /*
     TC #44: Hover Test
 1. Go to https://demos.telerik.com/kendo-ui/dragdrop/index
@@ -15,6 +16,7 @@ public class TC44_DragAndDrop_Test {
 3. Assert:
 -Text in big circle changed to: “You did great!”
      */
+
     @Test
     public void dragAndDrop_test() throws InterruptedException{
 
@@ -29,12 +31,14 @@ public class TC44_DragAndDrop_Test {
         Actions actions = new Actions(Driver.getDriver());
 
         Thread.sleep(1000);
+
         //Drag and drop the small circle to bigger circle.
         //actions.dragAndDrop(smallCircle, bigCircle).perform();
         //below line also works as such
         actions.clickAndHold(smallCircle).moveToElement(bigCircle).perform();
 
         String expectedWhileHover = "Now drop...";
+
         String actualWhileHover = bigCircle.getText();
 
         Assert.assertEquals(actualWhileHover, expectedWhileHover);
@@ -45,6 +49,7 @@ public class TC44_DragAndDrop_Test {
 
         // Assert: -Text in big circle changed to: “You did great!”
         String expectedTextInBigCircle = "You did great!";
+
         String actualTextInBigCircle = bigCircle.getText();
 
         Thread.sleep(1000);
@@ -52,8 +57,8 @@ public class TC44_DragAndDrop_Test {
         Assert.assertTrue(actualTextInBigCircle.equals(expectedTextInBigCircle));
 
         Driver.closeDriver();
-    }
 
+    }
 
 
 }

@@ -27,7 +27,7 @@ public class Loading1Page {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement submitButton;
 
-    @FindBy(id = "flash")
+    @FindBy(xpath = "//*[@class='flash error']")
     public WebElement errorMessage;
 
 

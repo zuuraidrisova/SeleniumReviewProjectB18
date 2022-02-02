@@ -7,6 +7,7 @@ import utilities.ConfigurationReader;
 import utilities.Driver;
 
 public class TC51_ForgotPasswordVerification {
+
     /*
     TC#51 : Vytrack forgot password page verifications à TITLE and URL
 1. Go to https://qa2.vytrack.com
@@ -34,6 +35,7 @@ Note: Follow Page Object Model design pattern
         //3. Verify title changed to expected
         //Expected: “Forgot Password”
         String actualTitle = Driver.getDriver().getTitle();
+
         String expectedTitle = "Forgot Password";
 
         Assert.assertEquals(actualTitle,expectedTitle);
@@ -41,6 +43,7 @@ Note: Follow Page Object Model design pattern
         //4. Verify url is as expected:
         //Expected: “https://qa2.vytrack.com/user/reset-request”
         String actualURL = Driver.getDriver().getCurrentUrl();
+
         String expectedURL = "https://qa2.vytrack.com/user/reset-request";
 
         Assert.assertTrue(actualURL.equals(expectedURL));
@@ -48,6 +51,7 @@ Note: Follow Page Object Model design pattern
         Thread.sleep(1000);
 
         Driver.closeDriver();
+
     }
 
 }

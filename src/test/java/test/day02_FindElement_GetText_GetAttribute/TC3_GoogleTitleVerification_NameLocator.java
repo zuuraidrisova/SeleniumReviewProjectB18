@@ -12,7 +12,8 @@ public class TC3_GoogleTitleVerification_NameLocator {
     1-Open	a	chrome	browser
     2-Go	to:	https://google.com
     3-Write	“apple”	in	search	box
-    4-Click	google	search	button5-Verify	title:
+    4-Click	google	search	button
+    5-Verify	title:
     Expected:	Title	should	start	with	“apple”
      */
 

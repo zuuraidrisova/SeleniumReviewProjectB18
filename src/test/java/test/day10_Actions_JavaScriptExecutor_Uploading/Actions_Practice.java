@@ -8,7 +8,6 @@ import utilities.Driver;
 
 public class Actions_Practice {
 
-
     @Test
     public void actions_hoverOver_test() throws InterruptedException{
 
@@ -28,5 +27,7 @@ public class Actions_Practice {
         actions.moveToElement(languageOptions).perform();
 
         Driver.closeDriver();
+
     }
+
 }

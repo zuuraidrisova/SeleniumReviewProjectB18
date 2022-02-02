@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import utilities.WebDriverFactory;
 
 public class TC12_AddRemoveElementsVerification {
+
     /*
     TC #2: PracticeCybertek.com_AddRemoveElements WebElement verification
      1. Open Chrome browser
@@ -37,6 +38,7 @@ public class TC12_AddRemoveElementsVerification {
        if(deleteButton.isDisplayed()){
 
            System.out.println("Delete Button is displayed.Passed!");
+
        }else{
 
            System.out.println("Delete Button is not displayed.Failed!");
@@ -51,6 +53,7 @@ public class TC12_AddRemoveElementsVerification {
             if(! deleteButton.isDisplayed()){
 
                 System.out.println("Delete Button is not displayed.Passed!");
+
             }else{
 
                 System.out.println("Delete Button is displayed.Failed!");
@@ -68,4 +71,5 @@ public class TC12_AddRemoveElementsVerification {
 
 
     }
+
 }

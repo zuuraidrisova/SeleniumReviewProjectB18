@@ -43,6 +43,7 @@ public class TestNG_Practice {
         Assert.assertEquals(actualTitle,expectedTitle);
 
         //so we dont need if else statements anymore
+
     }
 
 

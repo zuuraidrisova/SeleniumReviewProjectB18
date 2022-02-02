@@ -30,4 +30,5 @@ public class JavaFaker_practice {
 
 
     }
+
 }

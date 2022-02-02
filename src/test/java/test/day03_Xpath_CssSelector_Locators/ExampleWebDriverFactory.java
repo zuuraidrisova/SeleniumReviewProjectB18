@@ -23,7 +23,5 @@ public class ExampleWebDriverFactory {
 
         driver.close();
 
-
-
     }
 }

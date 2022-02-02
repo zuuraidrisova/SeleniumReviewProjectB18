@@ -1,6 +1,7 @@
 package test.day07_WebTables;
 
 public class day07_SeleniumNotes {
+
     /*
     JUN 23, TUESDAY
 -> findElement vs findElements
@@ -162,4 +163,5 @@ P10_LOCATE STEVE JOHNS' CHECKBOX
 /preceding-sibling::tagName -> this will only go to the siblings that is BEFORE
 
      */
+
 }

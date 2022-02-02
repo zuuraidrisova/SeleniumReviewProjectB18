@@ -34,15 +34,15 @@ JAVAFAKER:
 How to handle dynamic web elements?
     1- First I would try to locate one of the static parents or childs if there are any. And then I would locate the desired web element from there.
     2- Xpath has its own methods which helps us to locate dynamic web elements by their attribute values.
-        -> starts-with
-        -> ends-with
-        -> contains
+        -> starts-with //div[starts-with(@id='abc')]
+        -> ends-with //div[ends-with(@id='abc')]
+        -> contains  //div[contains(@name='abc')]
 How do we handle web tables?
     - By creating custom locators to get whatever I need to get from the table.
     -> If I need to get the whole row, I create a locator that returns me the whole row.
     -> If I need to get 1 single cell, I need to create a locator that returns me 1 single cell.
 //table[@id='ctl00_MainContent_orderGrid']/tbody/tr
-//table[@id='ctl00_MainContent_orderGrid']//tr
+//table[@id='ctl00_MainContent_orderGrid']//tr/td[2]
 Assert.fail()
     --> is just another static assertion method.
     --> Where ever you call this method, it will directly FAIL the test.
@@ -78,7 +78,7 @@ IFRAMES
 -> Iframes are basically <html> inside of another <html>
 -> Selenium can only focus one thing at a time. Therefore if we have iframe on the
  page, we need to SWITCH driver's focus to the inner iframe to be able to perform
-  any action with Selenium.
+  any action on it with Selenium.
 -> There are 3 ways to switch to iframes
     1- Locating as WebElement then using that webElement to switch.
     WebElement iframe = driver.findElement(LOCATOR);

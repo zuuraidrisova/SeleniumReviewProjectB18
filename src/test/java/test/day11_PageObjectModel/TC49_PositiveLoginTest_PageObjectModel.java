@@ -7,6 +7,7 @@ import utilities.ConfigurationReader;
 import utilities.Driver;
 
 public class TC49_PositiveLoginTest_PageObjectModel {
+
     /*
     TC#49 : Vytrack positive login test às Store Manager
 1. Go to https://qa2.vytrack.com
@@ -27,6 +28,7 @@ Note: Follow Page Object Model design pattern
         loginPage = new LoginPage();
 
         String username = ConfigurationReader.getProperty("storeManager_username");
+
         String password = ConfigurationReader.getProperty("storeManager_password");
 
        // loginPage.login(username, password); this will also work using our method
@@ -43,6 +45,7 @@ Note: Follow Page Object Model design pattern
         Thread.sleep(1000);
 
         String actualTitle = Driver.getDriver().getTitle();
+
         String expectedTitle = "Dashboard";
 
         Assert.assertTrue(actualTitle.equals(expectedTitle));

@@ -118,7 +118,6 @@ UTILITIES:
 	cell phone factory --> cell phones
 	WebDriverFactory --> it creates and returns web drivers
 
-
 	Task :
 	- Write a static method in WebDriverFactory class
 	- Return type is WebDriver
@@ -126,7 +125,6 @@ UTILITIES:
 	- it accepts one String argument, and returns the browser according to what string is passed
 	- if "chrome" --> returns chrome browser
 	- if "firefox" --> returns firefox browser
-
 
 	geckodriver --> download --> add into your project --> and do same system.setproperty
 
@@ -177,7 +175,7 @@ ex:
 	THERE ARE TWO TYPES OF XPATH LOCATORS
 	1- ABSOLUTE XPATH:
 		-> Absolute xpath starts with single slash -> /
-		-> It starts from the very beginning of the javax.swing.text.html.HTML code
+		-> It starts from the very beginning of the HTML code
 		-> Absolute xpath is not reliable, because if there is any minimal structural change in your HTML code, your locator will not work
 		-> Try avoid using it
 
@@ -235,7 +233,6 @@ ex:	<li class="nav-item">
 
     TO GO from child to parent using xpath : use /..
     This will take you to the direct parent of the current web element
-
 
    */
 

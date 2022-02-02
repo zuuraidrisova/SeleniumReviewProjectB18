@@ -23,6 +23,7 @@ public abstract class TestBase {
    All of these lines can be simplified by creating a TestBase class where we store
     them and get them(all of the setup, and/or teardown) when we need it.
      */
+
     protected WebDriver driver;//we make our driver protected so it is secure
 
     @BeforeMethod

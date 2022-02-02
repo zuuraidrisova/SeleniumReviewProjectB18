@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TC5_EtsyTitleVerification_IdLocator {
+
     /*
     TC #5: EtsyTitle Verification
     1.Open Chrome browser
@@ -60,5 +61,7 @@ public class TC5_EtsyTitleVerification_IdLocator {
 
             System.out.println("Etsy Title Verification Failed!");
         }
+
+        driver.close();
     }
 }

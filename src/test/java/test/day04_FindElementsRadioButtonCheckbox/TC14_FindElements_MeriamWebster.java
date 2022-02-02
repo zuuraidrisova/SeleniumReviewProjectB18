@@ -53,6 +53,7 @@ public class TC14_FindElements_MeriamWebster {
                 // eachLinkText.isEmpty();
 
                 totalNumberOfLinksWithText++;
+
             }else{
 
                 totalNumberOfLinksWithoutText++;

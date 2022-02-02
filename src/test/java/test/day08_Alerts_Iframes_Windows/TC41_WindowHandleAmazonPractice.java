@@ -66,18 +66,18 @@ and get those pages. We will learn JavaScriptExecutor later as well.
            if(driver.getCurrentUrl().contains("etsy")){
 
                Assert.assertTrue(driver.getTitle().contains("Etsy"));
+
                break;
            }
        }
 
-
     }
-
 
     @AfterMethod
     public void teardown(){
 
        driver.close();
+
     }
 
 }

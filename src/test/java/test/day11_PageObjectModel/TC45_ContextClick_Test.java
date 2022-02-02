@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import utilities.Driver;
 
 public class TC45_ContextClick_Test {
+
     /*
     TC #45: Context Click – HOMEWORK
 1. Go to https://the-internet.herokuapp.com/context_menu
@@ -38,11 +39,11 @@ No assertion needed for this practice.
         Alert alert = Driver.getDriver().switchTo().alert();
 
         Thread.sleep(1000);
+
         //Accept alert
         alert.accept();
 
         Thread.sleep(1000);
-
 
         Driver.closeDriver();
 

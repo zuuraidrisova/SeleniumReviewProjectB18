@@ -36,5 +36,7 @@ public class VerifyOrderMethod_test {
 
         //closing the browser
         driver.close();
+
     }
+
 }

@@ -14,6 +14,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC30_CybertekRegistrationForm {
+
     /*
     TC#30: Cybertek registration form confirmation
 Note: Use JavaFaker when possible.
@@ -146,7 +147,6 @@ displayed.
 
         signInButton.click();
 
-
         //Verify success message “You’ve successfully completed registration.” is
         //displayed
 
@@ -155,6 +155,7 @@ displayed.
         Assert.assertTrue(successMessage.isDisplayed());
 
         String actualSuccessMessage = successMessage.getText();
+
         String expectedSuccessMessage = "You've successfully completed registration!";
 
         System.out.println("actualSuccessMessage = " + actualSuccessMessage);
@@ -167,5 +168,7 @@ displayed.
     public void teardown(){
 
         driver.close();
+
     }
+
 }

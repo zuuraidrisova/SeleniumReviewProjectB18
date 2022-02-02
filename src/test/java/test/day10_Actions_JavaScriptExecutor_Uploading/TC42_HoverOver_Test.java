@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import utilities.Driver;
 
 public class TC42_HoverOver_Test {
+
     /*
     TC #15: Hover Test
 1. Go to http://practice.cybertekschool.com/hovers
@@ -33,6 +34,7 @@ a. “name: user3” is displayed
         WebElement secondImage = Driver.getDriver().findElement(By.xpath("//div[@class='figure'][2]"));
 
         WebElement thirdImage = Driver.getDriver().findElement(By.xpath("//div[@class='figure'][3]"));
+
 
         // we need to locate texts
         WebElement text1 = Driver.getDriver().findElement(By.xpath("//h5[.='name: user1']"));
@@ -63,9 +65,8 @@ a. “name: user3” is displayed
         Thread.sleep(1000);
 
         Driver.closeDriver();
+
+
     }
-
-
-
 
 }

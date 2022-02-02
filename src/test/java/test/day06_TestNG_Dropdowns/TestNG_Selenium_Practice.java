@@ -26,6 +26,7 @@ public class TestNG_Selenium_Practice {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get("https://www.google.com");
+
     }
 
 
@@ -34,7 +35,6 @@ public class TestNG_Selenium_Practice {
 
         String actualTitle = driver.getTitle();
         String expectedTitle = "Google";
-
 
         Assert.assertEquals(actualTitle,expectedTitle);
 
@@ -60,6 +60,7 @@ public class TestNG_Selenium_Practice {
 
         driver.close();
     }
+
 
 
 }

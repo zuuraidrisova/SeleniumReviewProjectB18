@@ -18,7 +18,6 @@ public class LoginToSmartBear_methodTest {
     @Test
     public void loginSmartBear_methodTest(){
 
-
         driver = WebDriverFactory.getDriver("chrome");
 
         driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx");

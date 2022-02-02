@@ -32,5 +32,6 @@ public class TC46_ScrollingDown_UsingActions {
         actions.moveToElement(inputsLink).perform();
 
         Driver.closeDriver();
+
     }
 }

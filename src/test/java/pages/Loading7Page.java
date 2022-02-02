@@ -12,9 +12,11 @@ public class Loading7Page {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+
     //    @FindBy(xpath = "//strong") also works
     @FindBy(xpath = "//div[@class='alert alert-success alert-dismissible fade show']/strong")
     public WebElement doneMessage;
+
 
     @FindBy(xpath = "//img")
     public WebElement spongeBobImage;

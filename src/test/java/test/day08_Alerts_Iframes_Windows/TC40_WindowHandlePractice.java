@@ -12,6 +12,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC40_WindowHandlePractice {
+
     /*
     TC # 40: Window Handle practice
 1. Create a new class called: WindowHandlePractice
@@ -47,6 +48,7 @@ public class TC40_WindowHandlePractice {
         System.out.println("currentWindowHandle = " + currentWindowHandle);
 
         String actualCurrentPageTitle =  driver.getTitle();
+
         String expectedCurrentPageTitle = "Practice";
 
         //Assert: Title is “Practice”
@@ -69,6 +71,7 @@ public class TC40_WindowHandlePractice {
 
             //Assert: Title is “New Window”
             String actualNewWindowTitle = driver.getTitle();
+
             String expectedNewWindowTitle ="New Window";
 
             if(actualNewWindowTitle.equals(expectedNewWindowTitle)) {
@@ -76,16 +79,21 @@ public class TC40_WindowHandlePractice {
                 Assert.assertEquals(expectedNewWindowTitle, actualNewWindowTitle);
                 break;
             }
+
         }
 
         driver.switchTo().window(currentWindowHandle);
+
         System.out.println(driver.getTitle());
+
         System.out.println("Verifications passed!");
+
     }
 
     @AfterMethod
     public void teardown(){
 
         driver.close();
+
     }
 }

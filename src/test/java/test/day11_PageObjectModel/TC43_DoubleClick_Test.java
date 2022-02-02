@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import utilities.Driver;
 
 public class TC43_DoubleClick_Test {
+
     /*
     TC #43: Double Click Test
 1. Go to https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick2

@@ -1,6 +1,7 @@
 package test.day13_FullReviewSession;
 
 public class day13_SeleniumReviewNotes {
+
     /*
     JULY 9TH, THURSDAY
 
@@ -78,7 +79,7 @@ ex: /html/body/div/div/div/img
 - instead of giving tagName, if you pass *, it will only check for attributes and values.
 
 - Whenever you are having hard time locating with xpath, always try to find a
-static (stable/non changing) parent or child to the desired web element we are
+static (stable/non changing) parent or child to the desired web element you are
 trying to locate. And go from there
 
 ====================================================

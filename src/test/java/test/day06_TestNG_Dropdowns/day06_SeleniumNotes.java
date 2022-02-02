@@ -7,7 +7,7 @@ public class day06_SeleniumNotes {
 What is TestNG?
 -> TestNG stands for Test NextGeneration.
 -> TestNG is a unit testing tool that allows us create test flow using Annotations.
--> First we create methods, then we use TestNG annotations to create running flow.
+-> First we create java methods, then we use TestNG annotations to create running flow.
 - We decide which method is test
 - Which method runs before tests
 - Which method runs after tests
@@ -62,7 +62,6 @@ public void tearDown(){
 @AfterClass:
 -> After class makes the annotated method run once after the tests in the class.
 
-
 ASSERTIONS:
 -> Assertions are coming from TestNG
 -> Assertions allows us to do our verification between actual and expected results
@@ -95,7 +94,6 @@ Methods returning boolean values: isSelected, isDisplayed, isEmpty, contains, eq
 - This method expects you to pass a boolean value.
 - If the boolean value is FALSE, IT WILL PASS. If not, it will fail.
 
-
 --> If your assertion fails, it will stop executing the current test in the same line where it failed.
 --> It will move to the next test. And start running that one.
 --> For this reason it is not suggested to do multiple assertions in one test, unless you have to.
@@ -109,7 +107,6 @@ How to ignore a test?
 - It will not be recognized as a TestNG test anymore.
 - Therefore it will be ignored in runtime.
 
-
 In what order the tests are running if we have multiple tests?
 -> By default tests are running in alphabetical order.
 
@@ -121,7 +118,6 @@ priority => You can change the running order using priority.
 - Also you can pass math operations like (priority = 2+2) etc
 
 priority (2+2) == priority(4)
-
 
 ==========================================================================
 

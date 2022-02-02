@@ -11,6 +11,7 @@ public class VyTrackForgotPasswordPage {
 
         //creating connection between the driver and object of current class
         PageFactory.initElements(Driver.getDriver(), this);
+
     }
 
     //locating input box
@@ -24,7 +25,5 @@ public class VyTrackForgotPasswordPage {
     //locating error message
     @FindBy(xpath = "//div[@class='alert alert-error']")
     public WebElement errorMessage;
-
-
 
 }

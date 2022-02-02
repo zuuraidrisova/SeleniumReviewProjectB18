@@ -26,15 +26,12 @@ public class ReadingFromPropertiesFile {
         //we need to load the opened file into the properties object
         properties.load(file);
 
-
         //we can read the configuration.properties file
         // using properties object and getProperty() method
 
         System.out.println(properties.getProperty("browser"));
         System.out.println(properties.getProperty("username"));
         System.out.println(properties.getProperty("password"));
-
-
 
     }
 
@@ -54,6 +51,5 @@ public class ReadingFromPropertiesFile {
         System.out.println("password = " + password);
 
     }
-
 
 }

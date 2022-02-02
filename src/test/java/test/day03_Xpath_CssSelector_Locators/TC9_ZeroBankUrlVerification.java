@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TC9_ZeroBankUrlVerification {
+
      /*
     TC #9: Zero Bank URL verification
 1. Open Chrome browser

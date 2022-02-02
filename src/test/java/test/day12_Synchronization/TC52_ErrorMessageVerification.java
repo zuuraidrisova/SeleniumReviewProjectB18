@@ -7,6 +7,7 @@ import utilities.ConfigurationReader;
 import utilities.Driver;
 
 public class TC52_ErrorMessageVerification {
+
     /*
     TC#52 : Vytrack forgot password page verification à ERROR MESSAGE
 1. Go to https://qa2.vytrack.com/user/reset-request
@@ -37,10 +38,10 @@ Note: Follow Page Object Model design pattern
         //5. Verify error message text is as expected.
         //Expected: There is no active user with username or email address “given text”.
         String expectedErrorMessage = "There is no active user with username or email address \"" + randomUsername + "\".";
+
         String actualErrorMessage = forgotPasswordPage.errorMessage.getText();
 
         Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
-
 
         Thread.sleep(1000);
 

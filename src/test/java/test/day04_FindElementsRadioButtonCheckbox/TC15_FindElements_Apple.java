@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TC15_FindElements_Apple {
+
       /*
     TC #15: FINDELEMENTS_APPLE
 1. Open Chrome browser
@@ -62,6 +63,7 @@ public class TC15_FindElements_Apple {
             if (eachLinkText.isEmpty()){
 
                 totalNumberOfLinksWithoutText++;
+
             }else {
 
                 totalNumberOfLinksWithText++;

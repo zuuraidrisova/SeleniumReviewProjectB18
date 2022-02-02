@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TC37_SmartBearEditOrder {
+
      /*
     TC #37: SmartBear edit order
 1. Open browser

@@ -11,7 +11,6 @@ public class JavaScriptExecutor_Practices {
     @Test
     public void js_executor_test() throws InterruptedException{
 
-
         //we set up driver, open browser and get the given link
         Driver.getDriver().get("http://practice.cybertekschool.com/");
 
@@ -34,8 +33,5 @@ public class JavaScriptExecutor_Practices {
         Driver.closeDriver();
 
     }
-
-
-
 
 }

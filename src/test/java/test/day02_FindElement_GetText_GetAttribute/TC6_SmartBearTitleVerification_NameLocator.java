@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TC6_SmartBearTitleVerification_NameLocator {
+
      /*
     TC#5:	Basic	login	authentication
     1-Open	a	chrome	browser

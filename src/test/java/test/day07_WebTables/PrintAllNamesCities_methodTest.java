@@ -36,5 +36,7 @@ public class PrintAllNamesCities_methodTest {
 
         //closing the browser
         driver.close();
+
     }
+
 }

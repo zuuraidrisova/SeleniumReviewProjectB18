@@ -12,11 +12,12 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC26_SelectDateVerification_redo {
+
      /*
 TC #26: Selecting date on dropdown and verifying
 1. Open Chrome browser
 2. Go to http://practice.cybertekschool.com/dropdown
-3. Select “December 1st, 1921” and verify it is selected.
+3. Select “December 1st, 1971” and verify it is selected.
 Select year using : visible text
 Select month using : value attribute
 Select day using : index number
@@ -34,18 +35,18 @@ Select day using : index number
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get("http://practice.cybertekschool.com/dropdown");
+
     }
 
     @Test
     public void selectDateTest(){
 
-
         Select yearDropdown = new Select(driver.findElement(By.xpath("//select[@id='year']")));
         //Select year using : visible text
-        yearDropdown.selectByVisibleText("1921");
+        yearDropdown.selectByVisibleText("1971");
 
         String actualYear = yearDropdown.getFirstSelectedOption().getText();
-        String expectedYear = "1921";
+        String expectedYear = "1971";
 
         Select monthDropdown = new Select(driver.findElement(By.xpath("//select[@id='month']")));
         //Select month using : value attribute
@@ -61,7 +62,7 @@ Select day using : index number
         String actualDay = dayDropdown.getFirstSelectedOption().getText();
         String expectedDay = "1";
 
-        //3. Select “December 1st, 1921” and verify it is selected.
+        //3. Select “December 1st, 1971” and verify it is selected.
 
         Assert.assertTrue(actualYear.equals(expectedYear));
 
@@ -70,12 +71,13 @@ Select day using : index number
         Assert.assertTrue(actualDay.equals(expectedDay));
 
 
-
     }
 
     @AfterMethod
     public void tearDown(){
 
        driver.close();
+
     }
+
 }

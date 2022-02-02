@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TC4_GmailTitleVerification_LinkTextLocator {
+
      /*
     TC #4: Back and forth navigation
     1-Open a chrome browser

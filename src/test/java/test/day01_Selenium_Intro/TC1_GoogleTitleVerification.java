@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TC1_GoogleTitleVerification {
+
 /*
     TC #1: Google Title Verification
     1. Open Chrome browser

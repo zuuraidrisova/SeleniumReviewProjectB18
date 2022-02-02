@@ -1,6 +1,7 @@
 package test.day02_FindElement_GetText_GetAttribute;
 
 public class day02SeleniumNotes {
+
     /*
     JUN 5, FRIDAY
 Selenium -->

@@ -40,7 +40,11 @@ public class ConfigurationReader {
 
         //getProperty() method comes from Java itself, from Properties class
         return properties.getProperty(keyWord);
+
     }
 
 
 }
+
+
+

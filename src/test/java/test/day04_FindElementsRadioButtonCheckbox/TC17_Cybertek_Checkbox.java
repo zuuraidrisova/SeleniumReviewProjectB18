@@ -50,7 +50,6 @@ public class TC17_Cybertek_Checkbox {
         }else{
 
             System.out.println("Checkbox 2 is not selected by default.Verification failed!");
-
         }
 
         // Click checkbox #1 to select it.
@@ -64,6 +63,7 @@ public class TC17_Cybertek_Checkbox {
         if(checkBox1.isSelected()){
 
             System.out.println("Checkbox 1 is selected.Verification passed!");
+
         }else{
 
             System.out.println("Checkbox 1 is not selected.Verification failed!");
@@ -79,7 +79,6 @@ public class TC17_Cybertek_Checkbox {
             System.out.println("Checkbox 2 is selected.Verification failed!");
 
         }
-
 
         driver.close();
     }

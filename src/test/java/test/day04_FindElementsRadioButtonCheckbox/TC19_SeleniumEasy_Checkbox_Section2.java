@@ -29,16 +29,17 @@ TC #19: SeleniumEasy Checkbox Verification – Section 2
 
         driver.get("https://www.seleniumeasy.com/test/basic-checkbox-demo.html");
 
-
        WebElement checkAllButton = driver.findElement(By.xpath("//input[@class='btn btn-primary']"));
 
         // Verify “Check All” button text is “Check All”
        String attributeValue =  checkAllButton.getAttribute("value");
+
        String expectedText = "Check All";
 
        if(expectedText.equals(attributeValue)){
 
            System.out.println("Check All” button text is “Check All”.Verification passed!");
+
        }else{
 
            System.out.println("Check All” button text is not “Check All”.Verification failed!");
@@ -54,6 +55,7 @@ TC #19: SeleniumEasy Checkbox Verification – Section 2
            if (eachCheckbox.isSelected()){
 
                System.out.println("All checkBoxes are selected. Verification passed!");
+
            }else{
 
                System.out.println("One or some of checkBoxes are NOT selected. Verification failed!");
@@ -65,17 +67,14 @@ TC #19: SeleniumEasy Checkbox Verification – Section 2
         if(checkAllButton.getAttribute("value").equals("Uncheck All")){
 
             System.out.println("Button text changed to “Uncheck All”.Verification passed!");
+
         }else{
 
             System.out.println("Button text did not change to “Uncheck All”.Verification failed!");
 
         }
 
-
         driver.close();
-
-
-
 
     }
 }

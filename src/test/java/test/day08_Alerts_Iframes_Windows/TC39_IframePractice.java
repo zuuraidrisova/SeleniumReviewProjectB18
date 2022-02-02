@@ -12,6 +12,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC39_IframePractice {
+
     /*
     TC #39 : Iframe practice
 1. Create a new class called: IframePractice
@@ -33,6 +34,7 @@ public class TC39_IframePractice {
         driver.manage().window().maximize();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
     }
 
     @Test
@@ -51,6 +53,7 @@ public class TC39_IframePractice {
 
         //assert the actual and expected value
         String actualText = yourContextGoesHereText.getText();
+
         String expectedText = "Your content goes here.";
 
         Assert.assertTrue(actualText.equalsIgnoreCase(expectedText));
@@ -68,6 +71,7 @@ public class TC39_IframePractice {
 
         //assert the actual and expected value
         String actualIframeText = h3HeaderText.getText();
+
         String expectedIframeText = "An iFrame containing the TinyMCE WYSIWYG Editor";
 
         Assert.assertTrue(actualIframeText.equals(expectedIframeText));
@@ -81,4 +85,5 @@ public class TC39_IframePractice {
 
         driver.close();
     }
+
 }

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TC8_CybertekUrlVerification {
+
     /*
     TC #8: PracticeCybertek/ForgotPassword URL verification
 1. Open Chrome browser
@@ -46,6 +47,7 @@ Hint: You need to use getText method for this practice.
         if(actualUrl.contains(expectedInUrl)){
 
             System.out.println("Cybertek URL Verification Passed!");
+
         }else{
 
             System.out.println("Cybertek URL Verification Failed!");
@@ -55,10 +57,10 @@ Hint: You need to use getText method for this practice.
         String expectedTextBox = "Your e-mail's been sent!";
         String actualTextBox = driver.findElement(By.name("confirmation_message")).getText();
 
-
         if(actualTextBox.equals(expectedTextBox)){
 
             System.out.println("Text Box Message Verification Passed!");
+
         }else{
 
             System.out.println("Text Box Message Verification Failed!");

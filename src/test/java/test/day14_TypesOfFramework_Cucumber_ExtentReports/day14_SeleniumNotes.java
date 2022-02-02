@@ -1,6 +1,7 @@
 package test.day14_TypesOfFramework_Cucumber_ExtentReports;
 
 public class day14_SeleniumNotes {
+
     /*
     JULY 1OTH, TGIFRIDAY
 
@@ -116,7 +117,6 @@ HOW TO CREATE A NEW PROJECT FROM SCRATCH STEP BY STEP:
 29 - pass the path of the features directory into the features = "" keyword value:
      right click -> copy -> copy path from CONTENT ROOT
 30 - pass the path of the step_definitions package in the glue = “” keyword value
-
     COPY FROM THE SOURCE ROOT
 
 31 - right click on step_definitions package: new --> java class

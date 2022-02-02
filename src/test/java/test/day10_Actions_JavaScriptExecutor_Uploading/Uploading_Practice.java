@@ -19,8 +19,8 @@ public class Uploading_Practice {
 
         Thread.sleep(1000);
 
-        //send our file
-        chooseFile.sendKeys("/Users/zuura/Desktop/SomethingTest");
+        //send our file path as string arg
+        chooseFile.sendKeys("/Users/zuura/Desktop/test.txt");
 
         Thread.sleep(1000);
 
@@ -37,8 +37,6 @@ public class Uploading_Practice {
 
         Driver.closeDriver();
 
-
     }
-
 
 }

@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TC36_SmartBearDeleteOrder {
+
     /*
    TC #36: SmartBear delete order
 1. Open browser and
@@ -65,7 +66,6 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
 
       System.out.println("customerNamesList = " + customerNamesList);
 
-
       String nameDeleted = "Mark Smith";
 
       Assert.assertTrue(! customerNamesList.contains(nameDeleted));
@@ -88,7 +88,7 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
    public void teardown(){
 
       driver.close();
-   }
 
+   }
 
 }

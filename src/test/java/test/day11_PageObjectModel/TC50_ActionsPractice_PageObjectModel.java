@@ -7,6 +7,7 @@ import pages.HoversPage;
 import utilities.Driver;
 
 public class TC50_ActionsPractice_PageObjectModel {
+
     /*
     TC #50: Hover Test using Page Object Model
 1. Go to http://practice.cybertekschool.com/hovers
@@ -57,6 +58,7 @@ a. “name: user3” is displayed
         Thread.sleep(1000);
 
         Driver.closeDriver();
+
     }
 
 }

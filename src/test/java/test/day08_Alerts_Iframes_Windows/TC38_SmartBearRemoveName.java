@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class TC38_SmartBearRemoveName {
+
      /*
     TC #38 : Create a method called removeName()
 1. Accepts two parameters: WebDriver, String name
@@ -22,4 +23,5 @@ public class TC38_SmartBearRemoveName {
 
 
     }
+
 }

@@ -12,6 +12,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC25_SelectingValueFromNonSelectDropdown {
+
       /*
     TC #25: Selecting value from non-select dropdown
 1. Open Chrome browser
@@ -33,6 +34,7 @@ public class TC25_SelectingValueFromNonSelectDropdown {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get("http://practice.cybertekschool.com/dropdown");
+
     }
 
     @Test
@@ -53,6 +55,7 @@ public class TC25_SelectingValueFromNonSelectDropdown {
         //5. Verify title is “Facebook - Log In or Sign Up”
 
        String expectedTitle = "Facebook - Log In or Sign Up";
+
        String actualTitle = driver.getTitle();
 
         Assert.assertEquals(actualTitle, expectedTitle);

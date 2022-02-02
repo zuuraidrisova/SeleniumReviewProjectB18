@@ -1,6 +1,7 @@
 package test.day10_Actions_JavaScriptExecutor_Uploading;
 
 public class day10_SeleniumNotes {
+
     /*
     JULY 2ND, THURSDAY, TGIT
 
@@ -35,7 +36,7 @@ What is executeScript method?
 -> Method coming from JavascriptExecutor, allows us to apply actual javascript code in our selenium code.
 
 -> This method expects 2 arguments.
--> First arg: String. We pass JS code in a string
+-> First arg: String. We pass JS code in as a string
 -> Second arg: We can pass OBJ Type if we want to do specific action on something specific
 
 How many ways you know to scroll in Selenium?
@@ -49,13 +50,12 @@ HOW DO YOU DOWNLOAD AND VERIFY USING SELENIUM?
 -> Selenium only works in browsers/HTML code. Folder directory of your computer
             is OUT OF SCOPE for Selenium.
 
-
 ============================
 HOW TO HANDLE UPLOADS USING SELENIUM?
 
 -> We locate upload webelement
--> We sendKeys of the file path
--> Then we click upload
+-> We sendKeys of the file path as a string arg
+-> Then we click upload button
 
  how to get path in Mac: right click + press and hold Option
 

@@ -20,6 +20,7 @@ public class WebTablePractices {
 2. Go to website:
 http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
      */
+
     static WebDriver driver;
 
     @BeforeMethod
@@ -32,7 +33,6 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
         driver.manage().window().maximize();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
 
     }
 
@@ -72,7 +72,7 @@ given name is in the list or not.
 
             if(eachName.getText().equals(expectedName)) {
 
-                actualName += eachName.getText();
+                actualName = eachName.getText();
             }
         }
 
@@ -93,20 +93,18 @@ given name is in the list or not.
     public static void  printNamesAndCities_2(WebDriver driver){
 
         List<WebElement> listOfNames = driver.findElements(By.xpath("//table[@class='SampleTable']/tbody/tr/td[2]"));
+
         List<WebElement> listOfCities = driver.findElements(By.xpath("//table[@class='SampleTable']/tbody/tr/td[7]"));
 
         for (int i = 0; i < listOfNames.size(); i++){
 
             System.out.println("Name "+(i+1) +" : "+listOfNames.get(i).getText()
 
-              +", City "+(i+1)+" : "+listOfCities.get(i).getText()
-
-            );
+              +", City "+(i+1)+" : "+listOfCities.get(i).getText());
 
         }
+
     }
-
-
 
 
 

@@ -54,5 +54,7 @@ public class TC7_ZeroBankHeaderVerification_TagNameLocator {
        }
 
        driver.close();
+
     }
+
 }

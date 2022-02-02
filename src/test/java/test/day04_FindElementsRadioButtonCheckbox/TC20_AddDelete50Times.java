@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TC20_AddDelete50Times {
+
      /*
     TC #20: PracticeCybertek.com_AddRemoveElements WebElement verification
     1. Open Chrome browser

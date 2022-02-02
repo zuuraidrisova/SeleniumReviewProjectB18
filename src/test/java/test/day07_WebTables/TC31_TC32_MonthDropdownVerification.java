@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TC31_TC32_MonthDropdownVerification {
+
     /*
     TC#31: Cybertek “month”dropdown default value
     1.Open browser
@@ -52,7 +53,6 @@ public class TC31_TC32_MonthDropdownVerification {
         System.out.println("expectedMonth = " + expectedMonth);
 
         Assert.assertEquals(actualMonth.toUpperCase(),expectedMonth);
-
 
     }
 
@@ -92,8 +92,8 @@ public class TC31_TC32_MonthDropdownVerification {
 
        }
 
-
         System.out.println("expectedListOfMonth = " + expectedListOfMonth);
+
         System.out.println("actualListOfMonth = " + actualListOfMonth);
 
         // 6.You can direcly assert.equalsbothlists.
@@ -109,5 +109,6 @@ public class TC31_TC32_MonthDropdownVerification {
 
         driver.close();
     }
+
 }
 

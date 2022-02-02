@@ -9,6 +9,7 @@ import pages.Loading7Page;
 import utilities.Driver;
 
 public class TC53_TC54_ExplicitWaitPractices {
+
     /*
     TC#53 : Dynamically Loaded Page Elements 7
 1. Go to http://practice.cybertekschool.com/dynamic_loading/7
@@ -17,6 +18,7 @@ public class TC53_TC54_ExplicitWaitPractices {
 4. Assert : Image is displayed.
 Note: Follow POM
      */
+
     @Test
     public void dynamicTitle_test(){
 
@@ -50,6 +52,7 @@ Note: Follow POM
 8. Assert “Your username is invalid!” text is displayed.
 Note: Follow POM
      */
+
     @Test
     public void dynamicForm_test() throws InterruptedException{
 
@@ -84,12 +87,12 @@ Note: Follow POM
         //Assert “Your username is invalid!” text is displayed.
         Assert.assertTrue(loading1Page.errorMessage.isDisplayed());
 
-
         Thread.sleep(1000);
 
         Driver.closeDriver();
 
     }
+
 
 
 }

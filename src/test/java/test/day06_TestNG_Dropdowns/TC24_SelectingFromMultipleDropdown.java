@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TC24_SelectingFromMultipleDropdown {
+
      /*
     TC #24: Selecting value from multiple select dropdown
 1. Open Chrome browser
@@ -89,4 +90,5 @@ public class TC24_SelectingFromMultipleDropdown {
 
       driver.close();
     }
+
 }

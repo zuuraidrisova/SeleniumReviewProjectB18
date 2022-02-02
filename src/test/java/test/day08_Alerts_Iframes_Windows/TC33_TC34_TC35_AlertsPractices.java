@@ -13,6 +13,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC33_TC34_TC35_AlertsPractices {
+
     /*
     TC #33: Information alert practice
 1. Open browser
@@ -34,6 +35,7 @@ public class TC33_TC34_TC35_AlertsPractices {
         driver.manage().window().maximize();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
     }
 
     @Test
@@ -76,6 +78,7 @@ public class TC33_TC34_TC35_AlertsPractices {
 4. Click to OK button from the alert
 5. Verify “You clicked: Ok” text is displayed.
    */
+
     @Test
     public void js_confirmation_alert_test() throws InterruptedException{
 
@@ -98,9 +101,11 @@ public class TC33_TC34_TC35_AlertsPractices {
 
         //asserting the equality of actual vs expected success message
         String actualOkText = okText.getText();
+
         String expectedText = "You clicked: Ok";
 
         Assert.assertEquals(actualOkText,expectedText);
+
     }
 
     /*
@@ -138,9 +143,11 @@ public class TC33_TC34_TC35_AlertsPractices {
         Assert.assertTrue(helloTextMessage.isDisplayed());
 
         String actualText = helloTextMessage.getText();
+
         String expectedText = "You entered: hello";
 
         Assert.assertEquals(actualText,expectedText);
+
 
     }
 
@@ -149,8 +156,6 @@ public class TC33_TC34_TC35_AlertsPractices {
 
         driver.close();
     }
-
-
 
 
 }

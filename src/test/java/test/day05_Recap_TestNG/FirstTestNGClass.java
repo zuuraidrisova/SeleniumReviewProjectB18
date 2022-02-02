@@ -25,16 +25,19 @@ public class FirstTestNGClass {
     public void test1(){
 
         System.out.println("Test 1 is running...");
+
     }
 
     @Test
     public void test2(){
 
         System.out.println("Test 2 is running ...");
+
     }
 
     @AfterMethod
     public void tearDown(){
+
 //@AfterMethod annotation will always run once after every @Test method
         System.out.println("After method running...");
     }

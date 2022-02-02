@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class WebDriverFactory {
 
@@ -42,6 +43,11 @@ public class WebDriverFactory {
             WebDriverManager.operadriver().setup();
 
             return new OperaDriver();
+
+        }else if(browserType.equals("safari")){
+
+            return new SafariDriver();
+
         }else{
 
             System.out.println("Given browser Type does not exists.Driver == null!");

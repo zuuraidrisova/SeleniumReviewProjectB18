@@ -33,4 +33,5 @@ public class GetText_vs_GetAttribute {
         driver.close();
 
     }
+
 }

@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TC27_SmartBearSoftwareLinkVerification {
+
       /*
 TC #27: Smartbear software link verification
 1. Open browser
@@ -36,6 +37,7 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx");
+
     }
 
     @Test
@@ -51,7 +53,6 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
        usernameInput.sendKeys("Tester");
        passwordInput.sendKeys("test");
        loginButton.click();
-
 
         List<WebElement> allLinksOnLandingPage = driver.findElements(By.xpath("//body//a"));
 
@@ -74,5 +75,7 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
     public void teardown(){
 
       driver.close();
+
     }
+
 }

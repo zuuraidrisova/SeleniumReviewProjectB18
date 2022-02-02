@@ -11,6 +11,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC41_WindowHandleAmazonPractice_reDoWarmUp {
+
      /*
     TC-WarmUp -41 # : Window Handle practice
 1. Create a new class called: WindowHandleWarmup
@@ -55,22 +56,25 @@ and get those pages. We will learn JavaScriptExecutor later as well.
         for (String  each: driver.getWindowHandles()){
 
             driver.switchTo().window(each);
+
             System.out.println("Current title: "+driver.getTitle());
 
             // Assert: Title contains “Etsy”
             if(driver.getCurrentUrl().contains("etsy")){
 
                 Assert.assertTrue(driver.getTitle().contains("Etsy"));
+
                 break;
             }
         }
 
     }
 
-
     @AfterMethod
     public void teardown(){
 
         driver.close();
+
     }
+
 }

@@ -1,6 +1,7 @@
 package test.day12_Synchronization;
 
 public class day12_SeleniumNotes {
+
     /*
     JULY 7TH, TUESDAY
 
@@ -228,4 +229,5 @@ public static void setUpClass(){
 }
 
      */
+
 }

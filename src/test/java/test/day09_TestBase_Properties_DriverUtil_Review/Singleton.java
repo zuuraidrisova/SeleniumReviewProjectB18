@@ -8,6 +8,7 @@ import org.openqa.selenium.opera.OperaDriver;
 import utilities.ConfigurationReader;
 
 public class Singleton {
+
     /*
     SINGLETON DESIGN PATTERN:
 -> Making the constructor private to limit the user access to the object of the class.

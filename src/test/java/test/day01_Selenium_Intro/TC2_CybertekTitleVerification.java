@@ -15,6 +15,7 @@ public class TC2_CybertekTitleVerification {
    4. Verify title:
        Expected: Practice
     */
+
     public static void main(String[] args) throws InterruptedException {
 
         //  1. Open Chrome browser and sets up my web driver

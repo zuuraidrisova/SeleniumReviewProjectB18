@@ -62,11 +62,13 @@ ex:	<li class="nav-item">
         if(homeLink.isDisplayed()){
 
             System.out.println("Home Link is displayed.Passed!");
+
         }else{
 
             System.out.println("Home Link is not displayed.Failed!");
         }
 
         driver.close();
+
     }
 }

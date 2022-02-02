@@ -1,6 +1,7 @@
 package test.day11_PageObjectModel;
 
 public class day11_SeleniumNotes {
+
     /*
     JULY 6TH, MONDAY-FUNDAY
 
@@ -8,7 +9,7 @@ TODAY'S SCHEDULE
 -Recap about last class
 -Solve tasks
 -Page object model design pattern
--PracticeS
+-Practices
 
 ===========================================================================
 
@@ -117,5 +118,6 @@ in its own related class, when we have issue with that web element we only go fi
 it in one place.
 
 3-> Easy to manage : we are managing all web elements of the relevant page from its own JAVA CLASS
+
      */
 }

@@ -15,6 +15,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC28_SmartBearSoftwareOrderPlacing {
+
       /*
     TC#2: Smartbear software order placing
 1. Open browser
@@ -61,7 +62,6 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
         WebElement passwordInput = driver.findElement(By.xpath("//input[@name='ctl00$MainContent$password']"));
 
         WebElement loginButton = driver.findElement(By.xpath("//input[@type='submit']"));
-
 
         //entering credentials and clicking the login button
         usernameInput.sendKeys("Tester");
@@ -178,6 +178,7 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
         Assert.assertTrue(successMessage.isDisplayed());
 
         String actualSuccessMessage = successMessage.getText();
+
         String expectedSuccessMessage = "New order has been successfully added.";
 
         Assert.assertEquals(actualSuccessMessage, expectedSuccessMessage);
@@ -189,4 +190,5 @@ http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
 
         driver.close();
     }
+
 }

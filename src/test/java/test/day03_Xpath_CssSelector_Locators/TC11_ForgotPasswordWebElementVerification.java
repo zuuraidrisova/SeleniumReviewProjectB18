@@ -106,14 +106,9 @@ public class TC11_ForgotPasswordWebElementVerification {
             System.out.println("Cybertek School Link is not displayed.Failed!");
         }
 
-
-
         driver.close();
 
 
     }
-
-
-
 
 }

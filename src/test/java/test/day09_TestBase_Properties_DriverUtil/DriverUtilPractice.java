@@ -21,7 +21,7 @@ public class DriverUtilPractice {
 
         Driver.getDriver().close();
 
-    }
 
+    }
 
 }

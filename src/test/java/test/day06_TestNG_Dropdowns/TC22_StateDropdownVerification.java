@@ -13,6 +13,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC22_StateDropdownVerification {
+
     /*
   TC #22: Selecting state from State dropdown and verifying result
 1. Open Chrome browser
@@ -72,4 +73,5 @@ Use all Select options. (visible text, value, index)
 
         driver.close();
     }
+
 }

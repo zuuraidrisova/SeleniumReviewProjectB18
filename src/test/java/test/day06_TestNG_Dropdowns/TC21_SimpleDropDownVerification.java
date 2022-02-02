@@ -13,6 +13,7 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC21_SimpleDropDownVerification {
+
     /*
 TC#21: Verifying “Simple dropdown” and “State selection” dropdown default values
 1. Open Chrome browser
@@ -27,6 +28,7 @@ Expected: “Select a State”
 
     @BeforeMethod
     public void setUp(){
+
         //1. Open Chrome browser
         //2. Go to http://practice.cybertekschool.com/dropdown
 
@@ -76,4 +78,5 @@ Expected: “Select a State”
 
         driver.close();
     }
+
 }

@@ -1,6 +1,7 @@
 package test.day09_TestBase_Properties_DriverUtil;
 
 public class day09_SeleniumNotes {
+
     /*
     JUNE 30TH, TUESDAY
 
@@ -101,7 +102,7 @@ to EXPLICITLY switch Selenium's focus back to the main frame(parent frame, defau
 
    html
       html
-      html
+        html
 
 
 - WINDOWS/TABS
@@ -136,7 +137,6 @@ to EXPLICITLY switch Selenium's focus back to the main frame(parent frame, defau
 
    -> To switch back to the main window (default window):
       driver.switchTo().window(mainHandle);
-
 
 TESTBASE:
    PROBLEM: We have many repeated lines just to setup the driver and be able to use it.
@@ -183,7 +183,7 @@ How we have been passing?
    loginButton.click();
 
 What is hardcoding?
-   -> Hardcoding is putting our test data into our TESTS.
+   -> Hardcoding is putting our test data directly into our TESTS.
    -> When you hard code, to be able to change the test data you have to go to
         each and every single test and change the data from there.
 
@@ -212,7 +212,6 @@ relative path: relative to whatever project we are working
 absolute path: is path from the source, user/desktop/..
 
 ConfigurationReader utility class
-   - What we did in that class
    -> to be able to read from .properties type of file, we have to do some setup.
    -> step by step how to read from properties file:
       1- Creating the object from Properties class
@@ -235,7 +234,7 @@ ConfigurationReader utility class
 
     //Our own custom method to read and get values from configuration.properties file
     public static String getProperty(String keyWord){
-       method on line 239 is coming from JAVA Properties class.
+       method on line 238 is coming from JAVA Properties class.
         return properties.getProperty(keyWord);
     }
 
@@ -264,21 +263,21 @@ What singleton is?
    to allow users to create the instance of this class in OUR WAY.
 
 REASONS:
-   idea of driver: we want to get the same driver instance whenever we want where ever we want
+   idea of driver: we want to get the same driver instance whenever we want, where ever we want
 
 We achieve this with Driver utility:
 
 Driver utility:
 
 1- Private constructor : ensures that no one else can create an instance of the WebDriver
-   -We will allow reach to this driver only through our getter method.
+   -We will allow to reach to this driver only through our getter method.
 
 2- We create a logic to ensure that the same driver instance is passed every single time:
    if(driver==null){
       //this statement will ensure that the new instance will be created only if the driver object is empty
 
       String browser = ConfigurationReader.getProperty("browser");
-      //this line will read what browser we want to run on dynamically from configuration.properties
+      //this line will read what browser we want to run dynamically from configuration.properties
 
             switch (browser){
                 case "chrome":

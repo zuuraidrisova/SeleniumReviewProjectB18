@@ -10,7 +10,6 @@ public class WindowHandlePractice_withTestBase extends TestBase {
     //Because we are extending out TestBase class , we dont have to do setUp and
     // tearDown since we are inheriting these methods
 
-
     /*
     TC-WarmUp -41 # : Window Handle practice
 1. Create a new class called: WindowHandleWarmup

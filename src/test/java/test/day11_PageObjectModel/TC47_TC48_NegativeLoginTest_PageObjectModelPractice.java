@@ -46,6 +46,7 @@ Note: Do this practice once before Page Object Model design pattern
         Assert.assertTrue(errorMessage.isDisplayed());
 
         String actualErrorMessage = errorMessage.getText();
+
         String expectedErrorMessage = "Invalid user name or password.";
 
         Assert.assertTrue(actualErrorMessage.equals(expectedErrorMessage));
@@ -88,6 +89,7 @@ Note: Do this practice USING Page Object Model design pattern
         //Expected: “Invalid user name or password.”
 
         String actualErrorMessage = loginPage.errorMessage.getText();
+
         String expectedErrorMessage = "Invalid user name or password.";
 
         Assert.assertEquals(actualErrorMessage,expectedErrorMessage);
@@ -97,6 +99,8 @@ Note: Do this practice USING Page Object Model design pattern
         Driver.closeDriver();
 
     }
+
+
     /*
     TC#48 : Vytrack negative login test à Wrong Username Test
 1. Go to https://qa2.vytrack.com
@@ -136,9 +140,8 @@ Note: Follow Page Object Model design pattern
         Thread.sleep(1000);
 
         Driver.closeDriver();
+
     }
-
-
 
 
 }

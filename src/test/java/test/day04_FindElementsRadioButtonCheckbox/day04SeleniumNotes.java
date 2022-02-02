@@ -1,6 +1,7 @@
 package test.day04_FindElementsRadioButtonCheckbox;
 
 public class day04SeleniumNotes {
+
     /*
     JUN 12, FRIDAY
 
@@ -12,7 +13,7 @@ public class day04SeleniumNotes {
    findElements() ==> method is used to find more than one webElement
                    locates and returns all the matching web element as a list
                    return type => list<WebElement>
-                   if it cannot find webElements, it does not throw exception, returns empty list
+                   if it cannot find webElements, it does not throw any exception, it just returns empty list
 
         Thread.sleep(2000) ==>comes from java, not Selenium
                               stops running of the code for the given milliseconds
@@ -37,19 +38,17 @@ public class day04SeleniumNotes {
     how do we handle checkboxes and radio buttons in Selenium?
 
         isSelected() ==> if checkbox is selected it will return true, else false
-        isEnabled() ==> if checkbox is enabled on the page, it will return true
-
+        isEnabled() ==> if checkbox is enabled on the page, it will return true, else false
 
     Absolute xpath :
                 -> starts with : /
                 -> starts from the very beginning of  <html>
                 -> u can only go from parent to child
-                -> You can only go from parent to child
 
    Relative xpath:
                -> starts with: //
                -> looks thru everything in html code
-               ->returns all matching results
+               -> returns all matching results
                -> u can start from anywhere in the html code
 -> Where ever you use // (relative xpath) is looking to jump and return all the matching results
 ex : //body//a
@@ -81,7 +80,9 @@ Commonly used xpaths
 //a[@href='/iphone/']
 
 (//a[@href='/iphone/'])[1] --> this is returning me two web elements
-If your xpath is returning you more than one web elements and you want to specify which one you get, you surround the xpath with (), and pass the index number in []
+If your xpath is returning you more than one web elements and you want
+to specify which one you get, you surround the xpath with (), and pass
+the index number in []
 
 #3 -> //a[@data-analytics-title='iphone']
 (//a[@data-analytics-title='iphone'])[1]
@@ -93,7 +94,6 @@ If your xpath is returning you more than one web elements and you want to specif
 #5 -> Using * instead of tagName
 //*[@class='ac-gn-link ac-gn-link-iphone']
 
-
 FINDING FROM PARENT: //li[@class='ac-gn-item ac-gn-item-menu ac-gn-iphone']/a
 Basically locate a unique parent, then move to the child using / until you reach desired web element
 
@@ -104,4 +104,5 @@ Basically locate a unique parent, then move to the child using / until you reach
 -> could be the screen size effecting something
 
      */
+
 }

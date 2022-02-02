@@ -9,6 +9,7 @@ import utilities.WebDriverFactory;
 import java.util.List;
 
 public class TC13_AddDelete50Times {
+
     /*
     TC #13: PracticeCybertek.com_AddRemoveElements WebElement verification
     1. Open Chrome browser
@@ -46,6 +47,7 @@ public class TC13_AddDelete50Times {
         if (deleteButtonsList.size() == 50){
 
             System.out.println("There are 50 Delete Buttons.Verification passed!");
+
         }else{
 
             System.out.println("There are not 50 Delete Buttons.Verification failed!");

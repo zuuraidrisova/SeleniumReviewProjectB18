@@ -20,6 +20,7 @@ public class LearningProperties {
         System.out.println( "System Username: "+ System.getProperty("user.name"));
 
         System.out.println("System Password: "+System.getProperty("password.name"));
+
     }
 
 }

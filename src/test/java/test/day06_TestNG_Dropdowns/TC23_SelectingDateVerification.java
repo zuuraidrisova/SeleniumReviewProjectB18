@@ -13,11 +13,12 @@ import utilities.WebDriverFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TC23_SelectingDateVerification {
+
      /*
 TC #23: Selecting date on dropdown and verifying
 1. Open Chrome browser
 2. Go to http://practice.cybertekschool.com/dropdown
-3. Select “December 1st, 1921” and verify it is selected.
+3. Select “December 1st, 1971” and verify it is selected.
 Select year using : visible text
 Select month using : value attribute
 Select day using : index number
@@ -40,8 +41,6 @@ Select day using : index number
     @Test
     public void selectDate_test() throws InterruptedException{
 
-
-
        WebElement yearDropdown =  driver.findElement(By.xpath("//select[@id='year']"));
        WebElement monthDropdown = driver.findElement(By.xpath("//select[@id='month']"));
        WebElement dayDropdown = driver.findElement(By.xpath("//select[@id='day']"));
@@ -51,10 +50,10 @@ Select day using : index number
         Select daySelect = new Select(dayDropdown);
 
         //Select year using : visible text
-        yearSelect.selectByVisibleText("1921");
+        yearSelect.selectByVisibleText("1971");
 
-       String actualYear = yearSelect.getFirstSelectedOption().getText();
-       String expectedYear = "1921";
+        String actualYear = yearSelect.getFirstSelectedOption().getText();
+        String expectedYear = "1971";
 
         //Select month using : value attribute
         monthSelect.selectByValue("11");
@@ -85,4 +84,5 @@ Select day using : index number
 
         driver.close();
     }
+
 }
