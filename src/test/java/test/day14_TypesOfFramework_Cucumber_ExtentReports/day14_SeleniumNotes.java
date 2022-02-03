@@ -3,6 +3,7 @@ package test.day14_TypesOfFramework_Cucumber_ExtentReports;
 public class day14_SeleniumNotes {
 
     /*
+
     JULY 1OTH, TGIFRIDAY
 
 TODAYS TOPICS:
@@ -130,5 +131,6 @@ CUCUMBER Behavior Driven Dev (BDD) HAS TWO PARTS:
 
 1- FEATURE FILES : WHERE WE WRITE SCENARIOS IN GHERKIN LANGUAGE
 2- STEP_DEFINITIONS : WHERE WE IMPLEMENT THE ACTUAL JAVA_SELENIUM CODE
+
      */
 }
