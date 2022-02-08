@@ -1,6 +1,7 @@
 package test.day16_CucumberTopics;
 
 public class day16_SeleniumNotes {
+
     /*
     JULY 14TH, TUESDAY
 
@@ -8,7 +9,6 @@ public class day16_SeleniumNotes {
 	#2 - SOLVE TASKS
 	#3 - dataTables
 	#4 - ScenarioOutlines
-
 
 ===========================================
 
@@ -67,16 +67,17 @@ TAGS --> Are used to group and run the feature files, and scenarios.
 ======================================================================
 
 BACKGROUND:
-	-> If we have any repeating steps that applies to ALL OF THE scenarios in the SAME feature file.
+	-> If we have any repeating steps that applies to ALL OF THE scenarios in the SAME feature file,
+	 we use background
 
 	-> Does creating "background" in one feature file apply to the other feature files?
 		- NO. It does not. It only applies to each scenario in the same feature file.
 
-	-> Background is very similar to @BeforeMethod from TestNG. The steps we put under background will be applied to the follow scenarios in the same feature file.
+	-> Background is very similar to @BeforeMethod from TestNG. The steps we put under background will be
+	applied to the following scenarios in the same feature file.
 
-	-> When you want to use background, you need to make sure that steps you put under background applies to all of the scenarios in the same feature file.
-
-
+	-> When you want to use background, you need to make sure that steps you put under background applies to
+	 all of the scenarios in the same feature file.
 
 ======================================================================
 
@@ -112,7 +113,8 @@ HOOKS :
 
 PARAMETERIZATION :
 
-	-> In simple terms, parameterization is just being able to pass test data to a scenario from feature files without having to go to step definitions.
+	-> In simple terms, parameterization is just being able to pass test data to a scenario from feature files
+	 without having to go to step definitions.
 
 	-> We can change the test data from feature file, and immediately run the feature with a new set of test data.
 
@@ -141,11 +143,9 @@ PARAMETERIZATION :
 
 		ACTUAL IS COMING FROM BROWSER
 
-
 ========================================================
 
 	Verify that on the google search page footer contains 6 links
-
 
 =========================================================
 

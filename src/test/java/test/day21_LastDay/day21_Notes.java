@@ -1,10 +1,9 @@
 package test.day21_LastDay;
 
 public class day21_Notes {
+
     /*
     JULY 23rd, TGIT
-
-BREAK UNTIL 11.00AM EST
 
 #1-> Library app and the task suite
 
@@ -61,21 +60,23 @@ BREAK UNTIL 11.00AM EST
 
 	- excel sheets for reading
 
-
 ============================================================
 
 tell me about your framework
 
 - I used java as my programming language in my framework.
 - I used Selenium to automate my browsers.
-- I used maven as my built automation tool. which has pom.xml file that allows me to manage my dependencies easyly.
-- I used Page Object Model to simplify managing and maintaing my framework for myself and my team.
+- I used maven as my built automation tool. which has pom.xml file that allows me to
+ manage my dependencies easyly.
+- I used Page Object Model to simplify managing and maintaing my framework for myself
+and my team.
 	- this design pattern allows me to locate web elements only once, in their respective classes.
 	- so that if there are any problems with any web elements, I know exactly where to go and how to fix it.
 - I created Singleton Design Pattern to allow my framework to pass the same instance of my webdriver in one session.
 	- (one session: when you click run, selenium creates one session. the session will end when the driver stops.)
 
-- I created a configuration.PROPERTIES type of file where I keep the important test data about my framework. I keep Test data that can change the running flow of the whole framework, such as:
+- I created a configuration.PROPERTIES type of file where I keep the important test data about
+ my framework. I keep Test data that can change the running flow of the whole framework, such as:
 	- browser
 	- username/password
 	- url: to change and run on different environments
@@ -89,23 +90,22 @@ tell me about your framework
 	- I write my test cases as if they are scenarios from the end users perspective in Gherkin language in my feature files.
 	- Gherkin is very similar to English. THerefore it is easy to understand for non-technical teammates.
 
-	- I implemented the actual coding logic with JAVA-SELENIUM-JUNIT... inside of my step_definitions package and it their own respective/related classes
+	- I implemented the actual coding logic with JAVA-SELENIUM-JUNIT... inside of my step_definitions package and in their own respective/related classes
 
 - I trigger my framework from my runner class.
 - Runner class allows me to run different types of testing suites that I created with my tags, such as smoke, regression, mini-regression.
 
-- I have different types of reports. But mainly I use "maven-cucumber-reporting" which is a very detailed reporting tool that has pie-charts, matrixes on which tests are passing and failing.
+- I have different types of reports. But mainly I use "maven-cucumber-reporting" which is a very detailed reporting tool that
+ has pie-charts, matrixes on which tests are passing and failing.
 - Even has the option to show what percentage of which tags are failing and passing.
 
 - Hooks class, where we implement some cucumber annotations such as Before, After, beforestep, afterstep to create outline for my scenarios.
 - I also implemented a logic where my framework is taking a screenshot and attaching it to my report if a scenario is failing.
 - APACHE POI
+
 STARTING FROM JULY 24TH
 - SQL
 - API
-
-
-
 
 #3-> Go over this one final time
 
@@ -121,11 +121,8 @@ STARTING FROM JULY 24TH
 		Student A : $90,000
 		STUDENT B : $150,000 (very minimum number of students %1-2)
 
-
-
 #5-> Videos
 		-> Video about doing parallel testing without multiple runner classes(we will adjust the driver class a little bit)
-
 
 hard assert vs soft assert:
  - hard assertion fails the whole test flow when assertion fails.
