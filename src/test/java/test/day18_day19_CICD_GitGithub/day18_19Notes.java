@@ -469,11 +469,87 @@ if you are getting 403 error, it means that you can see repo but you are not all
 
     git pull (fetch + merge)
 
-    Whenever you have a conflict, follow these steps:
+  Whenever you have a conflict, follow these steps:
 
-    Step 1. git pull
+Step 1. git pull
 
-    Step 2
+Step 2.  Go over conflicting files.
+ If you are not sure what should stay in the final version of conflicting files,
+ you can text/call to the person that can help you to decide what should stay.
+
+Step 3. Commit changes
+
+ 		git commit -a -m "some message"
+
+Step 4. Push changes to remote repo
+
+ 		git push
+
+Remember: make sure to pull before push!
+
+:q and hit enter/return to exit from text editor.
+
+To stash changes/to keep changes we made somewhere safe before pushing:
+
+	git stash
+
+To see list of stashes:
+
+	git stash list
+
+To apply first stash
+
+    git stash pop
+
+Then, you need to resolve conflicts. After you resolved all conflicts, you can commit and push your code.
+
+Why do we need to stash?
+
+	Let's say wee need to do the pull, and we have some unfinished work.
+	In this case, we cannot commit our changes, resolve conflicts and push.
+	 To remove changes temporary and pull updates we can stash them.
+
+Step 1. You are trying to pull but it fails
+Step 2. run: git stash
+Step 3. run: git pull
+Step 4. run: git stash pop
+Step 5. Resolve conflicts
+Step 6. Stage all changes (git add .)
+Step 7. Commit (git commit -m "some message")
+Step 8. Push commits to github (git push)
+
+#DONE#
+
+git stash clear - to delete all stashes
+
+To remove changes in specific file, use git checkout <file_name>
+
+	 git checkout cars.txt
+
+usually, master branch is locked from direct commits. Instead, everyone is working on their
+own branch.
+
+you are working within your own branch, commit and push to the remote, buy still your branch.
+
+How to create a branch?
+
+ git branch <branch_name>
+
+How to switch to new branch?
+
+ git checkout <branch_name>
+
+How to push new branch to github?
+
+git push --set-upstream origin <branch_name>
+
+and then just git push
+
+before push, always:
+
+ git add .
+ git commit -m "commit message"
+ git push (first time, for every new branch: git push --set-upstream origin <branch_name>)
 
      */
 }
